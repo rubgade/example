@@ -24,7 +24,7 @@ public class GreetingController {
     @PostMapping("/authenticate")
 	public String authenticate(@RequestParam(value = "username") String username,@RequestParam(value = "password") String password) {
 		
-        return "JWTToken";
+        return "JWTToken Hello World";
 	}       
 
 }
