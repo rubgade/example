@@ -13,9 +13,15 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<name>example</name>
 	<description>Demo project for Spring Boot</description>
+	<scm>
+   <connection>scm:git:https://github.com/rubgade/example.git</connection>
+   <url>https://github.com/rubgade/example.git</url>
+   <developerConnection>scm:git:https://github.com/rubgade/example.git</developerConnection>
+</scm>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
 	<dependencies>
 	
 	   <dependency>
@@ -73,5 +79,11 @@
 			</plugin>
 		</plugins>
 	</build>
+<distributionManagement>
+   <repository>
+      <id>maven-releases</id>
+      <url>http://localhost:8081/nexus/content/repositories/releases</url>
+   </repository>
+</distributionManagement>
 
 </project>
