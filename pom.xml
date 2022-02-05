@@ -9,14 +9,13 @@
 	</parent>
 	<groupId>com.rushikesh.apis</groupId>
 	<artifactId>example</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>example</name>
 	<description>Demo project for Spring Boot</description>
 	<scm>
-   <connection>scm:git:git://github.com:rubgade/example.git</connection>
-   <url>git://github.com:rubgade/example.git</url>
-   <developerConnection>scm:git:git://github.com:rubgade/example.git</developerConnection>
-    <tag>example-0.0.1</tag>
+   <connection>scm:git:git://github.com/rubgade/example.git</connection>
+   <url>git://github.com/rubgade/example.git</url>
+   <developerConnection>scm:git:git://github.com/rubgade/example.git</developerConnection>
   </scm>
 	<properties>
 		<java.version>11</java.version>
@@ -80,10 +79,20 @@
 		</plugins>
 	</build>
 <distributionManagement>
-   <repository>
+    <snapshotRepository>
+      <id>maven-snapshots</id>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
       <id>maven-releases</id>
-      <url>http://localhost:8081/nexus/content/repositories/releases</url>
-   </repository>
-</distributionManagement>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
 
+<repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://localhost:8081/repository/maven-public/</url>
+    </repository>
+  </repositories>
 </project>
