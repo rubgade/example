@@ -9,14 +9,13 @@
 	</parent>
 	<groupId>com.rushikesh.apis</groupId>
 	<artifactId>example</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>example</name>
 	<description>Demo project for Spring Boot</description>
 	<scm>
    <connection>scm:git:https://github.com/rubgade/example.git</connection>
    <url>https://github.com/rubgade/example.git</url>
    <developerConnection>scm:git:https://github.com/rubgade/example.git</developerConnection>
-  <tag>example-0.0.2</tag>
   </scm>
 	<properties>
 		<java.version>11</java.version>
